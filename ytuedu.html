@@ -414,58 +414,46 @@
                 border: 1px solid rgb(211, 143, 16);
                 height: 30px;
             }
-
+            
+            
             .body6{
                 width: 100%;
                 height: 220px;
-                left: 0;
                 background-repeat: no-repeat;
                 background-size: 100% 90%;
                 background-image: url(school-1.jpg);
-                z-index: 1;
-                display: flex;
-                flex-wrap: wrap;
-                padding: 8px 16px;
+                margin-top: 30px;
             }
-            
+
             .bbox{
-                width:25%;
-                height: 40%;
-                border: 1px solid white;
-                border-radius: 4px;
-                margin: 50px;
-                float: left;
-                margin-left: 40px;
-                display: flex;
-                flex-wrap: wrap;
-                background-color: black;
-                opacity: 0.5;
-        
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-auto-rows: auto;
+                grid-gap: 1rem;
             }
 
             .subox{
-                display: flex;
-                flex-wrap: wrap;
-                width: 25%;
+                margin-top: 30px;
+                border: 1px solid black;
+                margin-left: 30px;
+                border-radius: 4px;
+                background-color: black;
+                opacity: 0.5;
+
             }
-            
-            .suh3{
-                 padding-left: 150px;
-                margin: 0;
-                font-size: 28px;
+
+            .subox h2{
                 color: orange;
-
+                margin-top: 30px;
+                text-align: center;
             }
 
-            .subtext{
-                width: 25%;
-                padding-left: 50px;
-                margin:0px;
-                padding-top:0px;
-                font-size: 18px;
+            .subox h3{
                 color: white;
+                text-align: center;
             }
 
+            
             .update{
                 width: 100%;
                 height: 700px;
@@ -759,27 +747,22 @@
             </div>
 
             <div class="body6">
-                <div class="container">
-                     <div class="bbox">
-                  <div class="subox">
+                 <div class="bbox">
+                   <div class="subox">
                     <h3 class="suh3">25</h3>
                     <h4 class="sutext">DEVELOPMENT PUBLISH</h4>
                     </div>
-                </div>
-
-                <div class="bbox">
+         
                     <div class="subox">
                     <h3 class="suh3">1000</h3>
                     <h4 class="sutext">PROFESSIONAL LECTURES</h4>
-                </div>
-                </div>
-
-                <div class="bbox">
+                    </div>
+            
                     <div class="subox">
                     <h3 class="suh3">2000</h3>
                     <h4 class="sutext">STUDENT ENROLLMENT</h4>
-                </div>
-                </div>
+                     </div>
+          
                 </div>
             </div>
 
