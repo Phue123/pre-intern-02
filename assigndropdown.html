@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function mybtn(c){
+                document.getElementById("txtInput").style.color=c;
+            }
+        </script>
+        <title>Preintern Group</title>
+    </head>
+    <body>
+        <h1 id="txtInput">Hello! Welcome to Our PreIntern Group.</h1>
+    <form>
+        <select id="dropdown" onchange="mybtn(this.options[this.selectedIndex].value);">
+        <option value="black">Black</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        </select>
+    </form>
+    </body>
+</html>
