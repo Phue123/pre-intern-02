@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function disbtn(){
+                var c=document.getElementById('submit');
+                if(txt.value!=''){
+                    c.disabled=false;
+                }
+                else{
+                    c.disabled=true;
+                }
+            }
+        </script>
+        <title>PreIntern Group</title>
+    </head>
+    <body>
+    <input id="txt" placeholder="Enter your name" type="text" onkeyup="disbtn()">
+    <input type="submit" id="submit" disabled>
+    </body>
+</html>
