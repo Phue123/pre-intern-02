@@ -11,10 +11,25 @@
                     c.disabled=true;
                 }
             }
+            var names=[];
+            var namelist="";
+            function showInput(){
+                var display=document.getElementById("txt");
+                var thedisplay=display.value;
+                names.push(thedisplay);
+                document.getElementById("display").innerHTML="";
+                for (var I=0;I<names.length;I++)
+                {
+                namelist ="<li>"+names[I]+"</li>";
+                document.getElementById("display").innerHTML +=namelist;
+                }
+            }
         </script>
         <title>PreIntern Group</title>
     </head>
     <body>
+        <h1>To Do Lists</h1>
+        <div id="display"></div>
     <input id="txt" placeholder="Enter your name" type="text" onkeyup="disbtn()">
     <input type="submit" id="submit" disabled>
     </body>
